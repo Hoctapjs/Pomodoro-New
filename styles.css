@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 body {
@@ -11,27 +11,28 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f3f4f6;
+    background-color: #ffe6e1; /* Nhẹ nhàng, làm nền cho chủ đề */
 }
 
 .timer-container {
     text-align: center;
-    background-color: #fff;
+    background-color: #fff5f3; /* Màu trắng hồng nhạt, hài hòa với Tomato */
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
 }
 
 h1 {
-    color: #333;
-    font-size: 1.5em;
+    color: #e74c3c; /* Đỏ cà chua đậm */
+    font-size: 1.8em;
     margin-bottom: 20px;
 }
 
 .timer {
-    font-size: 2.5em;
-    color: #ff6347;
+    font-size: 3em;
+    font-weight: bold;
+    color: #d63031; /* Đậm hơn Tomato */
     margin-bottom: 20px;
 }
 
@@ -40,28 +41,32 @@ h1 {
 }
 
 button {
-    background-color: #ff6347;
+    background-color: #e74c3c; /* Màu Tomato */
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease-in-out;
     margin: 5px;
 }
 
 button:hover {
-    background-color: #ff4500;
-}
-
-#start, #reset {
-    width: 120px;
+    background-color: #c0392b; /* Đậm hơn Tomato khi hover */
+    transform: scale(1.05); /* Hiệu ứng nhỏ khi di chuột */
 }
 
 #start {
-    background-color: rgb(0, 197, 0);
-    color: white;
+    background-color: #27ae60; /* Màu xanh lá cho nút "Bắt Đầu" */
+}
+
+#start:hover {
+    background-color: #229954;
+}
+
+#reset {
+    background-color: #e74c3c; /* Đồng nhất với màu Tomato */
 }
 
 .session-info {
@@ -71,30 +76,40 @@ button:hover {
 }
 
 input[type="number"] {
-    width: 50px;
+    width: 60px;
     padding: 5px;
-    margin: 0 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin: 5px;
+    border: 2px solid #e74c3c; /* Viền Tomato */
+    border-radius: 10px;
     text-align: center;
+    font-size: 1em;
+    color: #d63031; /* Đồng nhất với các phần khác */
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #c0392b; /* Đậm hơn khi focus */
 }
 
 label {
-    font-size: 0.9em;
-    color: #666;
-}
-
-#workTimeInput, #shortBreakInput, #longBreakInput {
-    margin-top: 15px;
+    font-size: 1em;
+    color: #d63031; /* Màu chữ tương đồng Tomato */
 }
 
 button#setTime {
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: #4682b4;
+    background-color: #ff6347; /* Tomato tiêu chuẩn */
+    margin-top: 20px;
 }
 
 button#setTime:hover {
-    background-color: #4169e1;
+    background-color: #e74c3c; /* Đậm hơn khi hover */
+}
+
+p {
+    font-size: 1em;
+    color: #333;
+}
+
+#pomodoroCount {
+    color: #e74c3c; /* Nổi bật số đếm */
 }
