@@ -113,3 +113,11 @@ p {
 #pomodoroCount {
     color: #e74c3c; /* Nổi bật số đếm */
 }
+
+h1 {
+    color: #d63031; /* Nổi bật số đếm */
+}
+
+body {
+    background-color: #d63031;
+}
