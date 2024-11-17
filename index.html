@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">    
+</head>
+<body>
+    <div class="timer-container">
+        <h1>Pomodoro Timer</h1>
+        <div class="timer">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="start">Bắt Đầu</button>
+            <button id="reset">Đặt Lại</button>
+        </div>
+        <div class="session-info">
+            <p>Chu Kỳ: <span id="cycle">0</span> / 4</p>
+        </div>
+        <div>
+            <label>Thời gian làm việc (phút): </label>
+            <input type="number" id="workTimeInput" value="25">
+            <br>
+            <label>Nghỉ ngắn (phút): </label>
+            <input type="number" id="shortBreakInput" value="5">
+            <br>
+            <label>Nghỉ dài (phút): </label>
+            <input type="number" id="longBreakInput" value="15">
+            <button id="setTime">Thiết lập thời gian</button>
+            <br>
+            <div>
+                <p>Phiên Pomodoro hoàn thành: <span id="pomodoroCount">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
